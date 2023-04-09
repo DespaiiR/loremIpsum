@@ -1,5 +1,5 @@
 var burger = function () {
-    let activeBurger = document.querySelectorAll('.header__burger');
+    let activeBurger = document.getElementsByClassName('header__burger')[0];
     let activeNav = document.querySelector('.header__nav');
     /*activeBurger.addEventListener('click', function() {
         activeBurger.classList.toggle('active');
