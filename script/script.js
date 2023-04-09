@@ -1,14 +1,10 @@
 var burger = function () {
     let activeBurger = document.getElementsByClassName('header__burger')[0];
     let activeNav = document.querySelector('.header__nav');
-    /*activeBurger.addEventListener('click', function() {
+    activeBurger.addEventListener('click', function() {
         activeBurger.classList.toggle('active');
         activeNav.classList.toggle('active');
-    });*/
-    activeBurger.onclick = function () {
-        activeBurger.classList.toggle('active');
-        activeNav.classList.toggle('active');
-    }
+    });
 }
 burger();
 
