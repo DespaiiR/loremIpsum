@@ -1,0 +1,37 @@
+.form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+    gap: 40px;
+    &__input {
+        padding: 12px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #272733;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+        &:focus {
+            outline: 0;
+        }
+    }
+    &__btn {
+        position: relative;
+        left: 52%;
+        margin-top: 30px;
+        grid-column: span 3;
+        max-width: 370px;
+        transform: translate(-53%, 0);
+        font-size: 15px;
+    }
+    @media (max-width: 767px) {
+        gap: 30px;
+        &__btn {
+            grid-column: span 1;
+            left: 0;
+            max-width: 100%;
+            margin-top: 10px;
+            transform: translate(0, 0);
+        }
+    }
+}

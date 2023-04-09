@@ -1,0 +1,40 @@
+.wallet {
+    border-left:1px solid #C3C3C3;
+    border-right: 1px solid #C3C3C3;
+    padding: 0 40px;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &__icon {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__text {
+        color: #fff;
+    }
+    @media (max-width: 1100px) {
+        border: 0;
+        border-top:1px solid #C3C3C3;
+        border-bottom: 1px solid #C3C3C3;
+        padding: 10px 0;
+        &__list {
+            gap: 20px;
+        }
+    }
+    @media (max-width: 400px) {
+        &__text {
+            font-size: 11px;
+        }
+        &__list {
+            gap: 10px;
+        }
+    }
+    
+}

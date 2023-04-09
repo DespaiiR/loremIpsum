@@ -1,0 +1,26 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 42px;
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    &__icon {
+        display: flex;
+    }
+    &__text {
+        color: #FFF;
+        &:hover {
+            color: #3E9CDC;
+        }
+    }
+    @media (max-width: 400px) {
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
