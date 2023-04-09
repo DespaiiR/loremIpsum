@@ -1,10 +1,10 @@
 let burger = function () {
     let activeBurger = document.querySelector('.header__burger');
     let activeNav = document.querySelector('.header__nav');
-    activeBurger.onclick = function () {
+    activeBurger.addEventListener('click', function() {
         activeBurger.classList.toggle('active');
         activeNav.classList.toggle('active');
-    }
+    });
 }
 burger();
 
