@@ -1,12 +1,12 @@
-/*let burger = function () {*/
-    let activeBurger = document.querySelector('.header__burger');
+let burger = function () {
+    let activeBurger = document.querySelectorAll('.header__burger');
     let activeNav = document.querySelector('.header__nav');
     activeBurger.addEventListener('click', function() {
         activeBurger.classList.toggle('active');
         activeNav.classList.toggle('active');
     });
-/*}
-burger();*/
+}
+burger();
 
 let select = function () {
     let selectHeader = document.querySelectorAll('.form-select__header');
